@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<!-- script tags -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" defer></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" defer></script>
+	<script src="script.js" defer></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+   <title>Coding club EEE</title>
+   <link rel=icon href="logo2.ico" type=image/x-icon>
+  </head>  
+  <body>
+	<div class="top">
+		<img src="logo1.png" alt="" width="66px" height="90px">
+		<div class="title"  data-title-text="Coding club of EEE" id="a1">Coding club of EEE</div>
+		<center><div class="title"  data-title-text="Coding club of EEE" id="a2">Coding club of EEE</div></center>
+
+		
+	</div>
+  <section class="bg">
+	
+  	<div class="container">
+  		<div class="row d-flex justify-content-center">
+  			<div class="col-md-4">
+  				<div class="form-wrap">
+  					<div class="form-heading">
+  						<h1 style="user-select: none;">Registration Form</h1>
+  						<!-- <p>Enter your Personal Data</p> -->
+  					</div>
+  					<form id="regForm" class="forms" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+						<div class="form-group">
+							<label>Year </label><br>
+							<select name="year" id="select" class="form-select" onchange="callselect()" required>
+								<option value="">Select</option>
+								<option value="II">II</option>
+								<option value="III">III</option>
+							  </select>
+							  <p id="yrss" style="user-select: none;">select year to continue</p>
+						</div>
+						<div class="form-group" id="hi"></div>					
+  						<div class="form-group">
+							<button type="submit" class="btn btn-primary btn-block" id="submit" disabled>submit</button>
+  						</div>
+  					</form>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+
+  </section>
+  <div id="myModal" class="modal fade">
+	<div class="modal-dialog modal-confirm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="icon-box">
+					<i class="material-icons">&#xE876;</i>
+				</div>				
+				<h4 class="modal-title w-100">ThankYou!</h4>	
+			</div>
+			<div class="modal-body">
+				<p class="text-center">Your have register successfully </p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-success btn-block" data-dismiss="modal" onclick='window.open("https:\/\/raguggg.github.io/Ragu-G/","_self");'>OK</button>
+			</div>
+		</div>
+	</div>
+</div>     
+<div id= "dialog-container" class= "dialog-container">
+	<div class= "dialog-header" style="color: rgb(0, 255, 0);"><center>Join in Group</center></div>
+	<div id= "dialog-body" class= "dialog-body">This is the custom alert message. Click Ok to close this.</div>
+	<div class= "dialog-footer">
+		<button  class="btn btn-danger" onclick= "CustomAlert.close()">Ok</button>
+	</div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     
+  </body>
+</html>
